@@ -1,0 +1,5 @@
+#!/bin/sh                            
+echo "Today is `date +%A`, `date +%b` `date +%d`, `date +%Y` `date +%R` PM EST."
+echo There are `who | cut -c-8 | sort -u | wc -l` different people logged in and `who | wc -l` total logins.
+echo The calendar for $(cal | head -1) is:
+cal | tail +2
